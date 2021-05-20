@@ -1,0 +1,8 @@
+{
+  "short_name": "Tractian",
+  "name": "Tractian",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
