@@ -7,8 +7,6 @@ import './Listagem.css';
 
 const {Option} = Select;
 
-const files_endpoint = 'http://localhost:3333/files';
-
 export default function Listagem() {
     const [form] = Form.useForm();
 
@@ -210,7 +208,7 @@ export default function Listagem() {
                                 <p><b>Descrição:</b> {record.descricao}</p>
                                 }
                                 {record.imagem &&
-                                <Image width={200} src={`${files_endpoint}/${record.imagem}`}/>
+                                <Image width={200} src={`${process.env.REACT_APP_FILES_URL}/${record.imagem}`}/>
                                 }
                             </>
                         ),

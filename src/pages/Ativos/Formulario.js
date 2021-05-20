@@ -8,8 +8,6 @@ import api from '../../services/api';
 const {Option} = Select;
 const {confirm} = Modal;
 
-const files_endpoint = 'http://localhost:3333/files';
-
 const initialValues = {
     nome: '',
     descricao: '',
@@ -87,7 +85,7 @@ export default function Formulario() {
                 form.setFieldsValue(ativo.data);
 
                 if (!!ativo.data.imagem) {
-                    setImageUrl(`${files_endpoint}/${ativo.data.imagem}`);
+                    setImageUrl(`${process.env.REACT_APP_FILES_URL}/${ativo.data.imagem}`);
                 }
             }
 
