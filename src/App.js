@@ -39,7 +39,6 @@ function App() {
                                 <Route exact path={'/ativos/cadastrar'} component={() => <CadAtivo/>}/>
                                 <Route exact path={'/ativos/:id_ativo'} component={() => <CadAtivo/>}/>
 
-
                                 <Route exact path={'/empresas'} component={() => <Empresas/>}/>
                                 <Route exact path={'/empresas/cadastrar'} component={() => <CadEmpresa/>}/>
                                 <Route exact path={'/empresas/:id_empresa'} component={() => <CadEmpresa/>}/>
